@@ -22,6 +22,8 @@ public class EurekaServerApplication {
         String profile=scanner.nextLine();
         // SpringApplication.run(EurekaServerApplication.class, args);
         new SpringApplicationBuilder(EurekaServerApplication.class).profiles(profile).run(args);
+        System.out.println("服务注册中心 "+"http://127.0.0.1:8761");
+        System.out.println("或者服务注册中心 "+"http://127.0.0.1:8762");
     }
 
 
