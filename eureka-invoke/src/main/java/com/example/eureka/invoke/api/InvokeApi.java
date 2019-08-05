@@ -34,8 +34,8 @@ public class InvokeApi {
     @RequestMapping("/router")
     public String invoke() {
         RestTemplate restTemplate = getRestTemplate();
-        log.info("调用服务http://client/index/invoketest");
-        String forObject = restTemplate.getForObject("http://client/index/invoketest", String.class);
+        log.info("调用服务----------");
+        String forObject = restTemplate.getForObject("http://client/index/?name=myname", String.class);
         return forObject;
     }
 
